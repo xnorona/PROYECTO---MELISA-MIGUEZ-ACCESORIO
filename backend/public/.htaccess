@@ -1,0 +1,6 @@
+
+# Reescritura de URLs para que /api/products funcione con index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
